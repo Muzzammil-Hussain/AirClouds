@@ -22,4 +22,24 @@ form.addEventListener('submit', function(e) {
     } else {
         showSuccess(username);
     }
+    if(email.value === '') {
+        showError(email, 'Email is required');
+    } else {
+        showSuccess(email);
+    }
+    if(mobile.value === '') {
+        showError(mobile, 'mobile number is required');
+    } else {
+        showSuccess(mobile);
+    }
+    if(password.value === '') {
+        showError(password, 'Password is required');
+    } else {
+        showSuccess(password);
+    }
+    if(password2.value === '') {
+        showError(password2, 'Confirm password is required');
+    } else {
+        showSuccess(password2);
+    }
 });
