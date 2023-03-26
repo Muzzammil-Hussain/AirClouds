@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap');
 
+:root{
+    --success-color: green;
+    --error-color: orangered;
+
+}
 * {
     box-sizing: border-box;
 }
@@ -34,10 +39,14 @@ h2 {
     color: rgb(44, 40, 40);
 }
 .form-control input {
-    border: 2px solid rgb(221, 208, 208);
+    border: 2px solid rgb(241, 234, 234);
     border-radius: 6px;
     display: block;
     width: 100%;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color:rgb(138, 132, 132)
 }
 .form button {
     width: 100%;
@@ -47,6 +56,9 @@ h2 {
     height: 30px;
     margin-bottom: 8px;
 }
-#reset {
-    background-color: rgb(209, 7, 7);
+.form-control.success input{
+    border-color: var(success-color);
+}
+.form-control.error input{
+    border-color: var(--error-color);
 }
