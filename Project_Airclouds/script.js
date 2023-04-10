@@ -17,6 +17,11 @@ function showSuccess(input) {
     formControl.className = 'form-control success';
 }
 
+function isValidEmail(email){
+    const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    return re.test(String(email).toLowerCase());
+  }
+
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -27,7 +32,9 @@ form.addEventListener('submit', function (e) {
     }
 
     if (email.value === '') {
-        showError(email, 'email address is required')
+        showError(email, 'Email address is required')
+    } else if (!isValidEmail(email.value)) {
+        showError(email,'Email is invalid')
     } else{
         showSuccess(email);
     }
