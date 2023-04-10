@@ -74,3 +74,11 @@ visibility: hidden;
 .form-control.error small{
     visibility: visible;
 }
+a button{
+    width: 100%;
+    background-color: rgb(182, 195, 223);
+    border: 2px solid rgb(182, 195, 223);
+    height: 40px;
+    box-shadow: 0 2px 7px rgba(99, 117, 179, 0.932);
+    cursor: pointer;
+}

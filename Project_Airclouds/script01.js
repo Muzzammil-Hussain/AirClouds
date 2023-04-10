@@ -7,44 +7,39 @@ const password2 = document.getElementById('password2');
 
 function showError(input, message) {
     const formControl = input.parentElement;
-    formControl.className = 'form-control error';
-    const small = formControl.querySelector('small')
+    formControl.className = 'form-control error'
+    const small = formControl.querySelector('small');
     small.innerText = message;
 }
-
 function showSuccess(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
 }
-
-form.addEventListener('submit', function (e) {
+form.addEventListener('submit', function(e) {
     e.preventDefault();
-
-    if (username.value === '') {
-        showError(username, 'Username is required')
-    } else{
+    if(username.value === '') {
+        showError(username, 'Username is required');
+    } else {
         showSuccess(username);
     }
-
-    if (email.value === '') {
-        showError(email, 'email address is required')
-    } else{
+    if(email.value === '') {
+        showError(email, 'Email is required');
+    } else {
         showSuccess(email);
     }
-    if (mobile.value === '') {
-        showError(mobile, 'mobile number is required')
-    } else{
+    if(mobile.value === '') {
+        showError(mobile, 'mobile number is required');
+    } else {
         showSuccess(mobile);
     }
-    if (password.value === '') {
-        showError(password, 'Password is required')
-    } else{
+    if(password.value === '') {
+        showError(password, 'Password is required');
+    } else {
         showSuccess(password);
     }
-    if (password2.value === '') {
-        showError(password2, 'Confirm password is required')
-    } else{
+    if(password2.value === '') {
+        showError(password2, 'Confirm password is required');
+    } else {
         showSuccess(password2);
     }
-
-})
+});
