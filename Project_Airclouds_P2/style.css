@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(103, 133, 133);
+    background-color: rgb(12, 40, 63);
     display: flex;
     flex-direction: column;
     color: white;
@@ -32,7 +32,7 @@ body {
 }
 
 .seat {
-    background-color: darkgray;
+    background-color: rgb(6, 107, 165);
     height: 12px;
     width: 15px;
     margin: 3px;
