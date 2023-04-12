@@ -38,6 +38,7 @@ h2 {
 .form-control label {
     color: rgb(44, 40, 40);
 }
+
 .form-control input {
     border: 2px solid rgb(241, 234, 234);
     border-radius: 6px;
@@ -57,6 +58,7 @@ h2 {
     height: 30px;
     margin-bottom: 8px;
     box-shadow: 0 2px 7px rgba(99, 117, 179, 0.932);
+    cursor: pointer;
 }
 .form-control.success input {
     border-color: var(--success-color);
